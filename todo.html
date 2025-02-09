@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    
+    <div class="info_container">
+        <h1 class="information">Welcome to your TODO LIST!</h1>
+        <h4 class="subinformation">Add and delete your tasks!</h4>
+    </div>
+    <div class = "box_container">
+        <div class="box">
+            <div id="input_field">
+                <input type="text" id="task" placeholder="Enter the task here">
+            </div>
+            <div class="task_button">
+                <button type="button" onclick="addTask()">Add task</button> 
+            </div>
+            <div>
+                <ul id="task_list">
+                </ul>
+            </div>
+        </div>
+    </div>
+            <footer>
+                <button type="button" onclick="returnMenuPage()">Return to menu</button>
+                <p>Created by: <a href="https://github.com/Yeshii64">Yeshii64</a></p>
+            </footer>
+
+<script src="todo.js"></script>
+</body>
+</html>
