@@ -33,3 +33,20 @@ button:hover{
     background-color: #8d8484;
     animation : 3s ease-in;
 }
+/*footer styles*/
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+footer p{
+    font-weight: bold;
+    padding: 10%
+}
