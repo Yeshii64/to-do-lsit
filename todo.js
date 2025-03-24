@@ -1,4 +1,5 @@
 let localStoragedata = localStorage.getItem("task_list");
+
 //go to the todo list page
 function menuRedirect(){
     window.location.href = "todo.html";
@@ -53,14 +54,14 @@ function addCloseFunction(){
 }
 
 function updateLocalStorage(){
-  var ul= document.getElementById("task_list");
+  var ul = document.getElementById("task_list");
   localStorage.setItem("task_list", ul.innerHTML);
 }
 
+//im guessing this is to load the tasks from local storage
 window.onload = function(){
     if(localStoragedata != null){
-        var ul = document.getElementById("task_list");
-        ul.innerHTML = localStoragedata;
+        var ul = document.getElementById("task_list").innerHTML = localStoragedata;
         addCloseFunction();
     }
 }
